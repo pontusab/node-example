@@ -1,0 +1,223 @@
+/*Quick and dirt reset*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,
+center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,
+form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,
+object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,
+tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,
+video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+body {
+	font-family: "Lato", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0 0 20px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 300;
+	color: #666;
+	padding: 0 0 30px 0;
+}
+
+a {
+	color: #d32435;
+	text-decoration: none;
+}
+
+p.intro {
+	font-style: italic;
+	color: #333;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 0 0 50px 0;
+}
+
+header {
+	background: #1b1b1b;
+	width: 100%;
+	height: 80px;
+	margin: 0 0 80px 0;
+}
+
+.inner {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.inner .add {
+	display: block;
+	float: right;
+	width: 120px;
+	height: 80px;
+	background: #303030;
+	line-height: 80px;
+	font-weight: 400;
+	padding: 0 20px;
+	color: #fff;
+}
+
+.inner .logo {
+	float: left;
+	line-height: 80px;
+	font-weight: 400px;
+	font-size: 24px;
+
+}
+
+.inner .logo a {
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+	clear: both;
+	padding: 0 0 20px 0;
+}
+
+li {
+	padding: 0 20px;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+li a:first-child {
+	cursor: pointer;
+	color: #000;
+	display: inline-block;
+	padding: 20px 0;
+
+}
+
+span.time,
+span.bline {
+	float: left;
+	margin: 0 40px 0 0;
+}
+
+span.bline {
+	width: 200px;
+}
+
+span.time {
+	float: left;
+	font-weight: 400;
+	margin: 0 40px 0 0;
+}
+
+span.delete a {
+	color: #d32435;
+}
+
+span.delete {
+	float: right;
+}
+
+li:nth-child(odd) {
+	background: rgb(245, 245, 245);
+}
+
+form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+button {
+	border: none;
+	width: 100%;
+	height: 50px;
+	background: #d32435;
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+textarea,
+input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 40px;
+	border: 1px solid #DFDFDF;
+	resize: none;
+	font-size: 15px;
+}
+
+textarea {
+	height: 100px;
+}
+
+label {
+	padding: 15px 0 5px 0;
+	display: block;
+}
+
+::-webkit-input-placeholder {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #999;
+}
+
+.button {
+	padding: 20px 0 0;
+}
+
+.row {
+	padding: 0 0 10px 0;
+}
+
+.content-1 {
+	float: left;
+	width: 60%;
+}
+
+.content-2 {
+	float: right;
+	width: 30%;
+	font-weight: 300;
+	box-sizing: border-box;
+}
+
+.content-2 span {
+	font-weight: 400;
+}
+
+.content-2 .inner div {
+	padding: 0 0 15px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.content-2 .inner {
+	box-sizing: border-box;
+	width: 100%;
+	background: rgb(245, 245, 245);
+	padding: 25px 20px 20px 20px;
+}
+
+.content-2 a.delete  {
+	box-sizing: border-box;
+	margin: 40px 0 0;
+	background: #d32435;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	font-weight: 400;
+}

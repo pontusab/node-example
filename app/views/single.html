@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+	Program - {{ program.name }}
+{% endblock %}
+
+{% block content %}
+	<div class="content-1">
+		<h1>{{program.name}}</h1>
+		<p class="intro">{{ program.synopsis }}</p>
+		<p>{{program.leadtext}}</p>
+	</div>
+
+	<div class="content-2">
+		<div class="inner">
+			<div>
+				<span>Tid:</span> {{ program.start_time }} - {{ program.date }}
+			</div>
+
+			<div>
+				<span>länk:</span> <a href="{{ program.url }}">{{ program.url }}</a>
+			</div>
+		</div>
+
+		<a href="/program/{{ program.slug }}/delete" class="delete">Radera</a>
+	</div>
+	
+{% endblock %}
+		
+
+

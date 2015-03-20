@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<ul>
+		{% for program in programs %}
+			<li>
+				<a href="/program/{{ program.slug }}">
+					<span class="time">{{ program.date }} : {{ program.start_time }}</span>
+					<span class="bline">{{ program.bline }}</span>
+					<span class="name">{{ program.name }}</span>
+				</a>
+				<span class="delete">
+					<a href="/program/{{ program.slug }}/delete">Radera</a>
+				</span>
+			</li>
+		{% endfor %}
+	</ul>
+
+	<p>
+		Programflöde i XML-format:
+		<a href="/api">Xml-fil</a>
+	</p>
+
+{% endblock %}
+		

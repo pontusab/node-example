@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+	{{ title }}
+{% endblock %}
+
+{% block content %}
+	<form action="/add" method="post">
+
+		<div class="row">
+			<label for="name">Namn:</label>
+			<input name="name" id="name" placeholder="Namn" required>
+		</div>
+
+		<div class="row">
+			<label for="date">Datum:</label>
+			<input name="date" id="date" type="date" required>
+		</div>
+
+		<div class="row">
+			<label for="start_time">Tid:</label>
+			<input name="start_time" id="start_time" type="time" required>
+		</div>
+		
+		<div class="row">
+			<label for="leadtext">Beskrivning:</label>
+			<textarea name="leadtext" id="leadtext" placeholder="Beskrivning" required></textarea>
+		</div>
+		
+		<div class="row">
+			<label for="bline">Byline:</label>
+			<input name="bline" id="bline" required placeholder="Byline">
+		</div>
+
+		<div class="row">
+			<label for="synopsis">Synopsis:</label>
+			<textarea name="synopsis" id="synopsis" required placeholder="Synopsis"></textarea>
+		</div>
+		
+		<div class="row">
+			<label for="url">Länk:</label>
+			<input name="url" id="url" required placeholder="Länk">
+		</div>
+		
+		<div class="button">
+			<button type="submit">Spara</button>
+		</div>
+	</form>
+{% endblock %}
