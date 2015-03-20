@@ -20,8 +20,8 @@ module.exports = function(express, app, bodyParser, mongoose, swig) {
     app.engine('html', swig.renderFile);
     app.set('view engine', 'html');
     app.set('views', __dirname + '/app/views');
-    app.set('view cache', process.env.PRODUCTION || false );          // Disable in production
-    swig.setDefaults({ cache: process.env.PRODUCTION || false });  // Disable in production
+    // app.set('view cache', process.env.PRODUCTION || false );          // Disable in production
+    // swig.setDefaults({ cache: process.env.PRODUCTION || false });  // Disable in production
 
     // Configure app to use bodyParser()
     app.use(bodyParser.urlencoded({ extended: true }));
