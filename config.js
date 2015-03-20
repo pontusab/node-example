@@ -14,7 +14,7 @@ module.exports = function(express, app, bodyParser, mongoose, swig) {
     app.use(express.static(__dirname + '/public'));
     
     // Connect to the database
-    mongoose.connect( process.env.MONGO_URL || 'mongodb://localhost/programs');
+    mongoose.connect( process.env.MONGO_URL || 'mongodb://mtgx:seqacA7h@ds061757.mongolab.com:61757/heroku_app35069620');
 
     // Add swig as template engine
     app.engine('html', swig.renderFile);
